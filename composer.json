@@ -2,7 +2,10 @@
   "name": "waffflezz/smartleads",
   "require": {
     "php": "7.4.*",
-    "ext-json": "*"
+    "ext-json": "*",
+    "ext-pdo": "*",
+    "ext-sqlite3": "*",
+    "ext-ctype": "*"
   },
   "autoload": {
     "psr-4": {

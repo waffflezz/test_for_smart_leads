@@ -26,6 +26,7 @@ class Router
         $route = $this->findRoute($uri, $method);
         if (!$route) {
             echo json_encode(['error' => 'not found']);
+            exit();
         }
         if (is_array($route->getAction())) {
             [$controller, $action] = $route->getAction();
